@@ -1,11 +1,12 @@
 import * as React from 'react';
 import Link from 'next/link'
-import './index.scss';
+// import './index.scss';
+import {Button} from 'react-bootstrap';
 
 function HelloWorld() {
     return (
         <div>
-            Hello world
+            <Button>Hello world</Button>
             <p>scoped!</p>
             <Link as={'/p/1'} href={'/post?id=1'}><span>Link</span></Link>
             <style jsx>{`
